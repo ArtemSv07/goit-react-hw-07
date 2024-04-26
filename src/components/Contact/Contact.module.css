@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  text-align: left;
+}
+
+.btn {
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 auto auto;
+}
+
+.phoneIcon {
+  margin-right: 10px;
+}
+
+.buttonDelete {
+  position: relative;
+  width: 100px;
+  height: 37px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: rgba(20, 19, 19, 0.87);
+  margin: auto 0 auto auto;
+}
+
+.buttonDelete,
+.buttonDelete span {
+  transition: 200ms;
+}
+
+.buttonDelete .text {
+  transform: translateX(-9px);
+  color: white;
+  font-weight: bold;
+}
+
+.buttonDelete .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  /* transform: translateX(52px); */
+  left: 75px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonDelete svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.buttonDelete:hover {
+  background: #ff3636;
+}
+
+.buttonDelete:hover .text {
+  color: transparent;
+}
+
+.buttonDelete:hover .icon {
+  width: 100px;
+  border-left: none;
+  left: 0;
+}
+
+.buttonDelete:focus {
+  outline: none;
+}
+
+.buttonDelete:active .icon svg {
+  transform: scale(0.8);
+}
